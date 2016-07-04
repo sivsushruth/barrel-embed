@@ -1,0 +1,1560 @@
+2016-07-04 04:37:39 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.2133.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',watcher,[error_logger,'Elixir.Logger.ErrorHandler',{true,false,500},link]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2016-07-04 04:40:49 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.758.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',watcher,[error_logger,'Elixir.Logger.ErrorHandler',{true,false,500},link]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2016-07-04 04:41:37 =ERROR REPORT====
+** Generic server <0.966.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.16659>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.16659>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:41:37 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.966.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.16659>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.888.0>]
+    messages: [{#Port<0.16659>,{exit_status,127}}]
+    links: [<0.899.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 572
+  neighbours:
+2016-07-04 04:41:38 =ERROR REPORT====
+** Generic server <0.1933.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17633>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17633>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:41:38 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1933.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17633>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.888.0>]
+    messages: [{#Port<0.17633>,{exit_status,127}}]
+    links: [<0.899.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:41:38 =ERROR REPORT====
+** Generic server <0.1939.0> terminating 
+** Last message in was {#Port<0.17637>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17637>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:41:38 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1939.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.888.0>]
+    messages: [{'$gen_call',{<0.964.0>,#Ref<0.0.4.3253>},{prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}}]
+    links: [<0.899.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 558
+  neighbours:
+2016-07-04 04:47:55 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.758.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',watcher,[error_logger,'Elixir.Logger.ErrorHandler',{true,false,500},link]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2016-07-04 04:48:36 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.728.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',watcher,[error_logger,'Elixir.Logger.ErrorHandler',{true,false,500},link]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2016-07-04 04:49:38 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.728.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',watcher,[error_logger,'Elixir.Logger.ErrorHandler',{true,false,500},link]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2016-07-04 04:50:40 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.728.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',watcher,[error_logger,'Elixir.Logger.ErrorHandler',{true,false,500},link]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2016-07-04 04:50:54 =ERROR REPORT====
+** Generic server <0.935.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.11802>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.11802>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:50:54 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.935.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.11802>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{#Port<0.11802>,{exit_status,127}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 572
+  neighbours:
+2016-07-04 04:50:54 =ERROR REPORT====
+** Generic server <0.945.0> terminating 
+** Last message in was {#Port<0.12433>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.12433>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:50:54 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.945.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{'$gen_call',{<0.933.0>,#Ref<0.0.2.464>},{prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 562
+  neighbours:
+2016-07-04 04:50:54 =ERROR REPORT====
+** Generic server <0.948.0> terminating 
+** Last message in was {#Port<0.12485>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.12485>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:50:54 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.948.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: []
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 558
+  neighbours:
+2016-07-04 04:50:54 =ERROR REPORT====
+** Generic server <0.951.0> terminating 
+** Last message in was {#Port<0.12542>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.12542>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:50:54 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.951.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: []
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 558
+  neighbours:
+2016-07-04 04:50:54 =ERROR REPORT====
+** Generic server <0.960.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.12548>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.12548>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:50:54 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.960.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.12548>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{#Port<0.12548>,{exit_status,127}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:50:54 =ERROR REPORT====
+** Generic server <0.963.0> terminating 
+** Last message in was {#Port<0.12549>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.12549>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:50:54 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.963.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{'$gen_call',{<0.933.0>,#Ref<0.0.2.489>},{prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 590
+  neighbours:
+2016-07-04 04:50:54 =ERROR REPORT====
+** Generic server <0.965.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.12551>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.12551>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:50:54 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.965.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.12551>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{#Port<0.12551>,{exit_status,127}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:50:54 =ERROR REPORT====
+** Generic server <0.969.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.12554>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.12554>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:50:54 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.969.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.12554>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{#Port<0.12554>,{exit_status,127}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:50:54 =ERROR REPORT====
+** Generic server <0.972.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.12556>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.12556>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:50:54 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.972.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.12556>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{#Port<0.12556>,{exit_status,127}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:50:54 =ERROR REPORT====
+** Generic server <0.1227.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.12726>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.12726>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:50:54 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1227.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.12726>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{#Port<0.12726>,{exit_status,127}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:50:54 =ERROR REPORT====
+** Generic server <0.1236.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.12732>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.12732>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:50:54 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1236.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.12732>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{#Port<0.12732>,{exit_status,127}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:50:54 =ERROR REPORT====
+** Generic server <0.1245.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.12738>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.12738>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:50:54 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1245.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.12738>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{#Port<0.12738>,{exit_status,127}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:50:54 =ERROR REPORT====
+** Generic server <0.1272.0> terminating 
+** Last message in was {#Port<0.12756>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.12756>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:50:54 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1272.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{'$gen_call',{<0.933.0>,#Ref<0.0.2.644>},{prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 578
+  neighbours:
+2016-07-04 04:50:54 =ERROR REPORT====
+** Generic server <0.1317.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.12786>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.12786>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:50:54 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1317.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.12786>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{#Port<0.12786>,{exit_status,127}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:50:54 =ERROR REPORT====
+** Generic server <0.1320.0> terminating 
+** Last message in was {#Port<0.12788>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.12788>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:50:54 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1320.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: []
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 558
+  neighbours:
+2016-07-04 04:50:55 =ERROR REPORT====
+** Generic server <0.1692.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.13036>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.13036>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:50:55 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1692.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.13036>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{#Port<0.13036>,{exit_status,127}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:50:55 =ERROR REPORT====
+** Generic server <0.1695.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.13038>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.13038>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:50:55 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1695.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.13038>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{#Port<0.13038>,{exit_status,127}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:50:55 =ERROR REPORT====
+** Generic server <0.1698.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.13040>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.13040>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:50:55 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1698.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.13040>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{#Port<0.13040>,{exit_status,127}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:50:55 =ERROR REPORT====
+** Generic server <0.1710.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.13048>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.13048>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:50:55 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1710.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.13048>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{#Port<0.13048>,{exit_status,127}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:50:55 =ERROR REPORT====
+** Generic server <0.1713.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.13050>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.13050>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:50:55 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1713.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.13050>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{#Port<0.13050>,{exit_status,127}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:50:55 =ERROR REPORT====
+** Generic server <0.1716.0> terminating 
+** Last message in was {#Port<0.13052>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.13052>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:50:55 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1716.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{'$gen_call',{<0.933.0>,#Ref<0.0.1.20481>},{prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 558
+  neighbours:
+2016-07-04 04:50:55 =ERROR REPORT====
+** Generic server <0.1719.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.13054>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.13054>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:50:55 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1719.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.13054>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.858.0>]
+    messages: [{#Port<0.13054>,{exit_status,127}}]
+    links: [<0.869.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:53:02 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.768.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',watcher,[error_logger,'Elixir.Logger.ErrorHandler',{true,false,500},link]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.975.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.16710>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.16710>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.975.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.16710>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.16710>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 572
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.979.0> terminating 
+** Last message in was {#Port<0.16987>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.16987>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.979.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: []
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 558
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.997.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17054>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17054>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.997.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17054>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17054>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1006.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17060>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17060>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1006.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17060>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17060>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1009.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17062>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17062>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1009.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17062>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17062>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1021.0> terminating 
+** Last message in was {#Port<0.17070>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17070>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1021.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: []
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 558
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1030.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17076>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17076>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1030.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17076>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17076>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1048.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17088>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17088>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1048.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17088>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17088>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1051.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17090>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17090>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1051.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17090>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17090>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1057.0> terminating 
+** Last message in was {#Port<0.17094>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17094>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1057.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{'$gen_call',{<0.973.0>,#Ref<0.0.3.3410>},{prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 561
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1075.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17106>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17106>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1075.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17106>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17106>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1078.0> terminating 
+** Last message in was {#Port<0.17108>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17108>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1078.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: []
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 558
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1081.0> terminating 
+** Last message in was {#Port<0.17110>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17110>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1081.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{'$gen_call',{<0.973.0>,#Ref<0.0.4.1235>},{prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 570
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1090.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17116>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17116>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1090.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17116>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17116>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1099.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17122>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17122>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1099.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17122>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17122>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1102.0> terminating 
+** Last message in was {#Port<0.17124>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17124>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1102.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{'$gen_call',{<0.973.0>,#Ref<0.0.3.3461>},{prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 578
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1114.0> terminating 
+** Last message in was {#Port<0.17132>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17132>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1114.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: []
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 574
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1120.0> terminating 
+** Last message in was {#Port<0.17136>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17136>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1120.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: []
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 578
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1132.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17144>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17144>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1132.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17144>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17144>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1135.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17145>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17145>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1135.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17145>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17145>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 502
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1138.0> terminating 
+** Last message in was {#Port<0.17148>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17148>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1138.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: []
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 578
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1156.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17160>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17160>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1156.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17160>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17160>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1159.0> terminating 
+** Last message in was {#Port<0.17162>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17162>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1159.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{'$gen_call',{<0.973.0>,#Ref<0.0.1.17861>},{prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 574
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1165.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17166>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17166>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1165.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17166>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17166>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:53:33 =ERROR REPORT====
+** Generic server <0.1174.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17172>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17172>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:33 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1174.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17172>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17172>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:53:34 =ERROR REPORT====
+** Generic server <0.1945.0> terminating 
+** Last message in was {#Port<0.17686>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17686>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:34 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1945.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{'$gen_call',{<0.973.0>,#Ref<0.0.1.17882>},{prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 558
+  neighbours:
+2016-07-04 04:53:34 =ERROR REPORT====
+** Generic server <0.1951.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17690>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17690>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:34 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1951.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17690>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17690>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:34 =ERROR REPORT====
+** Generic server <0.1957.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17694>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17694>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:34 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1957.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17694>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17694>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:34 =ERROR REPORT====
+** Generic server <0.1984.0> terminating 
+** Last message in was {#Port<0.17712>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17712>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:34 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1984.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: []
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 558
+  neighbours:
+2016-07-04 04:53:34 =ERROR REPORT====
+** Generic server <0.1987.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17714>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17714>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:34 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1987.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17714>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17714>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:34 =ERROR REPORT====
+** Generic server <0.1993.0> terminating 
+** Last message in was {#Port<0.17718>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17718>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:34 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.1993.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{'$gen_call',{<0.973.0>,#Ref<0.0.4.3545>},{prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 566
+  neighbours:
+2016-07-04 04:53:34 =ERROR REPORT====
+** Generic server <0.2008.0> terminating 
+** Last message in was {#Port<0.17728>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17728>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:34 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.2008.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{'$gen_call',{<0.973.0>,#Ref<0.0.1.17966>},{prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 558
+  neighbours:
+2016-07-04 04:53:34 =ERROR REPORT====
+** Generic server <0.2029.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.17742>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.17742>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:34 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.2029.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.17742>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.17742>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:53:36 =ERROR REPORT====
+** Generic server <0.3805.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.18926>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.18926>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:36 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.3805.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.18926>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.18926>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:36 =ERROR REPORT====
+** Generic server <0.3808.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.18928>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.18928>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:36 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.3808.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.18928>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.18928>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:36 =ERROR REPORT====
+** Generic server <0.3820.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.18936>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.18936>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:36 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.3820.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.18936>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.18936>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:53:36 =ERROR REPORT====
+** Generic server <0.3823.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.18938>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.18938>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:36 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.3823.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.18938>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.18938>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:36 =ERROR REPORT====
+** Generic server <0.3829.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.18942>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.18942>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:36 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.3829.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.18942>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.18942>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:40 =ERROR REPORT====
+** Generic server <0.7846.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.21620>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.21620>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:40 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.7846.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.21620>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.21620>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 498
+  neighbours:
+2016-07-04 04:53:40 =ERROR REPORT====
+** Generic server <0.7852.0> terminating 
+** Last message in was {#Port<0.21623>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.21623>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:40 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.7852.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: []
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 558
+  neighbours:
+2016-07-04 04:53:40 =ERROR REPORT====
+** Generic server <0.7912.0> terminating 
+** Last message in was {#Port<0.21664>,{exit_status,127}}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.21664>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {exit_status,127}
+2016-07-04 04:53:40 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.7912.0>
+    registered_name: []
+    exception exit: {{exit_status,127},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{'$gen_call',{<0.973.0>,#Ref<0.0.2.377>},{prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 558
+  neighbours:
+2016-07-04 04:53:40 =ERROR REPORT====
+** Generic server <0.7927.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.21673>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.21673>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:40 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.7927.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.21673>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.21673>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:53:40 =ERROR REPORT====
+** Generic server <0.7933.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.21678>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.21678>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:40 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.7933.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.21678>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.21678>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
+2016-07-04 04:53:40 =ERROR REPORT====
+** Generic server <0.7945.0> terminating 
+** Last message in was {prompt,[<<"reset">>,#{<<"reduce_limit">> => true,<<"timeout">> => 5000}]}
+** When Server state == {os_proc,"/home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/barreljs /home/sivsushruth/elixir/9/demo/_build/dev/lib/barrel/priv/server/main.js",#Port<0.21686>,#Fun<couch_os_process.12.14459128>,#Fun<couch_os_process.13.14459128>,5000}
+** Reason for termination == 
+** {badarg,[{erlang,port_command,[#Port<0.21686>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-07-04 04:53:40 =CRASH REPORT====
+  crasher:
+    initial call: couch_os_process:init/1
+    pid: <0.7945.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,port_command,[#Port<0.21686>,[<<"[\"reset\",{\"reduce_limit\":true,\"timeout\":5000}]">>,10]],[]},{couch_os_process,writejson,2,[{file,"src/query/couch_os_process.erl"},{line,95}]},{couch_os_process,handle_call,3,[{file,"src/query/couch_os_process.erl"},{line,185}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [couch_query_servers,barrel_sup,<0.898.0>]
+    messages: [{#Port<0.21686>,{exit_status,127}}]
+    links: [<0.909.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 499
+  neighbours:
