@@ -1,0 +1,41 @@
+{application, 'barrel',
+  [{description, "barrel main application"},
+    {vsn, "0.1.0"},
+    {registered, [barrel_sup]},
+    {mod, {'barrel_app', []}},
+    {applications,
+      [kernel,
+        stdlib,
+        crypto,
+        asn1,
+        public_key,
+        ssl,
+        os_mon,
+        inets,
+        goldrush,
+        lager,
+        p1_utils,
+        fast_yaml,
+        jsx,
+        ibrowse,
+        snappy,
+        ucol,
+        oauth,
+        hackney,
+        mochiweb,
+        mochicow,
+        cowlib,
+        ranch,
+        cowboy,
+        hooks,
+        exometer_core
+      ]},
+    {env, [
+      {query_servers, [
+        {<<"javascript">>, {couch_couchjs, start_link, [javascript]}},
+        {<<"erlang">>, {couch_native_process, start_link, []}}
+      ]}
+
+    ]},
+    {modules, []}
+  ]}.
